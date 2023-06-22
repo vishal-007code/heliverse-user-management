@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import UserList from "./components/UserList";
+import "./App.css";
+import usersData from "./userData.json";
+import TeamBuilder from "./components/TeamBuilder";
 
-function App() {
+const App = () => {
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+      setUsers(usersData);
+    }, []);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="user-management">
+      <header>
+        <h1 className="App-header"> User Management</h1>
       </header>
+      <UserList />
+      <TeamBuilder users={users} />
     </div>
   );
-}
+};
 
 export default App;
