@@ -10,9 +10,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  padding-left: 360px;
 }
 .user-management header {
   display: flex;
@@ -25,12 +23,16 @@ body {
   gap: 10px;
   margin-bottom: 20px;
   padding-top: 50px;
+  padding-left: 110px;
 }
-
 .user-table {
-  width: 800px;
+  width: 77%;
   height: 200px;
   border-collapse: collapse;
+}
+.user-list{
+  padding-left: 108px;
+  width: 90%;
 }
 
 th {
@@ -51,32 +53,16 @@ ul {
 ul li {
   cursor: pointer;
 }
-
-/* .user-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  max-width: fit-content;
-} */
-
 .team-members {
   margin-top: 20px;
 }
-
-/* UserCard.css */
-/* .user-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-} */
-
 .available-users {
   display: flex;
 }
 .team-builder {
   display: flex;
   flex-direction: column;
+  padding-left: 108px;
 }
 .available-pagination {
   display: grid;

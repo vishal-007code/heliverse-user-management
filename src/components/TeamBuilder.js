@@ -92,7 +92,7 @@ const TeamBuilder = ({ users }) => {
   // Render user list table
   const renderUserListTable = () => {
     return (
-      <table className="user-list">
+      <table className="user-table">
         <thead>
           <tr>
             <th>ID</th>
@@ -158,7 +158,7 @@ const TeamBuilder = ({ users }) => {
             </button>
             <button
               className="pagination-btn"
-              disabled={currentPage === pageNumbers.length}
+              disabled={currentPage === pageNumbers.length-1}
               onClick={() => setCurrentPage(currentPage + 1)}
             >
               <FaChevronRight />

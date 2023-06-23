@@ -3,6 +3,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import usersData from "../userData.json";
 
 
+
 const UserList = () => {
   const [users, setUsers] = useState([]);
   const [searchName, setSearchName] = useState("");
